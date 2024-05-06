@@ -2,10 +2,10 @@
 import streamlit as st 
 import google.generativeai as genai
 import google.ai.generativelanguage as glm
-from dotenv import load_dotenv
-import os
-import io
-import pandas as pd
+# from dotenv import load_dotenv
+# import os
+# import io
+# import pandas as pd
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
