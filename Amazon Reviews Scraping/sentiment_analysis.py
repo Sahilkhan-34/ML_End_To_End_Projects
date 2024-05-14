@@ -62,15 +62,15 @@ def scrape_reviews(url, max_page=5):
 # scraping ends here
 
 
-genai.configure(api_key="AIzaSyALIvB-IxfKhe0Zxzdii2TEqTmefMxPk5M")
+genai.configure(api_key="AIzaSyC_L3-d181ibSultwSEuGm6P4XwE8HIsEQ")
 
 if __name__=='__main__':
 
     st.header("Sentiment Analysis of Reviews")
     # data = st.sidebar.file_uploader("Upload Data File Here", type=['csv'])
 
-    full_link = st.text_input("Enter the link Here")
-    btn =  st.button("start")
+    full_link = st.sidebar.text_input("Enter the link Here")
+    btn =  st.sidebar.button("start")
 
 
     if btn:
