@@ -48,7 +48,7 @@ if __name__=='__main__':
         response = model.generate_content([prompt, web_text])
 
         st.write(response.text)
-
+print('hello world')
     
 
 
