@@ -1,3 +1,6 @@
+# use this link to scrape the reviews
+#  "https://www.amazon.in/Apple-iPhone-13-128GB-Blue/product-reviews/B09G9BL5CP/ref=cm_cr_arp_d_paging_btm_next_"
+
 # Importing necessary modules
 import streamlit as st 
 import google.generativeai as genai
@@ -62,7 +65,7 @@ def scrape_reviews(url, max_page=5):
 # scraping ends here
 
 
-genai.configure(api_key="AIzaSyC_L3-d181ibSultwSEuGm6P4XwE8HIsEQ")
+genai.configure(api_key="API KEY")
 
 if __name__=='__main__':
 
