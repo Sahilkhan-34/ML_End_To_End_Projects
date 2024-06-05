@@ -32,15 +32,15 @@ def web_data(url):
     return visible_text
 
 
-genai.configure(api_key="AIzaSyC_L3-d181ibSultwSEuGm6P4XwE8HIsEQ")
+genai.configure(api_key="<API_KEY>")
 
 if __name__=='__main__':
 
-    st.header("Web Page Summary")
+    st.header("Web Site Summary")
     url = st.text_input('Input url', "")
     
     if st.button("Get Response", use_container_width=True):
-        model = genai.GenerativeModel('gemini-pro')
+        model = genai.GenerativeModel('gemini-1.5-flash-latest')
 
         web_text = web_data(url)
 
