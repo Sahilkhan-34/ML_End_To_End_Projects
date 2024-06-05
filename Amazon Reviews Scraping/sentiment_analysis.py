@@ -111,8 +111,8 @@ if __name__=='__main__':
                 # model selection
                 model = genai.GenerativeModel('gemini-pro')
 
-                prompt = """ Give the Sentiment analysis of given review only in these words either **POSITIVE**👍🏻 or **NEGATIVE** 👎🏻  or MIXED
-                consider one more condition if the review is to larger consider it **spam** """
+                prompt = """ Give the Sentiment analysis of given review only in these words either POSITIVE 👍🏻 or NEGATIVE 👎🏻  or MIXED
+                consider one more condition if the review is to larger consider it SPAM """
 
                 response = model.generate_content([prompt, reviews])
                 #  st.write(reviews)
